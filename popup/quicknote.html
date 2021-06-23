@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="quicknote.css"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+
+<div class="outer-wrapper">
+	<div class="menu">
+		<ul>
+			<li><a href="quicknote.html"><img src="../icons/quicknote-32.png" class="icon" id="icon"></a></li>
+			<li><a href="allnotes.html" id="1">All Notes</a></li>
+			<li><a href="bookmarks.html" id="2">Bookmarks</a></li>
+			<li><a href="todolist.html" id="3">To Do List</a></li>
+			
+			<li class="dark-mode">
+				<input type="checkbox" class="checkbox" id="check"/>
+				<label class="label" for="check">
+					<i class="fa fa-moon-o"></i>
+					<i class="fa fa-sun-o"></i>
+					<div class="ball"></div>
+				</label>
+			</li>
+		</ul>
+	</div>
+	
+	<hr>
+	
+	<div class="new-note" style="padding: 10px;">
+		<input type="text" class="text" placeholder="Title">
+		
+		<label for="colors"></label>
+		<select id="colors" name="colors">
+			<option value="">Color</option>
+			<option value="red">Red</option>
+			<option value="green">Green</option>
+			<option value="blue">Blue</option>
+			<option value="yellow">Yellow</option>
+		</select>
+		
+		<textarea rows="5" placeholder="Add a Note..."></textarea><br></br>		
+		
+		<button type="button" class="add btn btn-light">Add note</button>
+		<i class="star material-icons favourite-icon" id="star-icon">star_border</i>
+		<div class="clearfix"></div>
+	</div>
+	
+	<img src="../images/bunny.png" class="bunny" id="image">
+</div>
+
+<script src="quicknote.js"></script>
+
+</body>
+</html>
